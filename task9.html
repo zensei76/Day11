@@ -1,0 +1,84 @@
+<!--9.Write HTML input tags snippet to show default values for all Form elements.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+  </head>
+
+  <body>
+    <form>
+      <button type="button" onclick="alert('hello')">Click Me!</button>
+      <br /><br />
+
+      <fieldset>
+        <legend>Info</legend>
+        <label for="fname">First Name</label>
+        <input type="text" name="" id="fname" value="John" />
+        <label for="lname">Last Name</label>
+        <input type="text" name="" id="lname" value="Doe" />
+      </fieldset>
+
+      <label for="password-input">Password Input:</label><br />
+      <input
+        type="password"
+        id="password-input"
+        name="password-input"
+        value="abc@123"
+      /><br /><br />
+
+      <label for="selectBox">Select Box: </label><br />
+      <select id="selectBox">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+      </select>
+      <br /><br />
+
+      <label for="checkbox">Checkbox:</label><br />
+      <input type="checkbox" id="checkbox1" name="checkbox1" /> Checkbox 1<br />
+      <input type="checkbox" id="checkbox2" name="checkbox2" /> Checkbox 2<br /><br />
+
+      <label for="radio-button">Radio Button:</label><br />
+      <input
+        type="radio"
+        id="radio-button"
+        name="radio-button"
+        value="option1"
+        checked
+      />
+      Option 1<br />
+      <input
+        type="radio"
+        id="radio-button2"
+        name="radio-button2"
+        value="option2"
+      />
+      Option 2<br /><br />
+
+      <label for="message">Enter your message :</label><br />
+      <textarea name="" id="message" cols="30" rows="10">
+                This is the
+                default text area
+        </textarea
+      ><br /><br />
+
+      <label for="choose">Data List :</label>
+      <input list="choose" name="default" value="Option 3" />
+      <datalist id="choose">
+        <option value="Option 1"></option>
+        <option value="Option 2"></option>
+        <option value="Option 3"></option>
+      </datalist>
+    </form>
+    <br /><br />
+
+    <form oninput="result.value = slider.value">
+      <input type="range" id="slider" value="25" />
+      <br /><br />
+      The value is <output name="result" for="slider">25</output>
+    </form>
+  </body>
+</html>

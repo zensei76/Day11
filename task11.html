@@ -1,0 +1,104 @@
+<!--11.Create an HTML page, which should contain all types of input elements.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Input Elements</title>
+  </head>
+
+  <body>
+    <form>
+      <input type="button" value="submit" /><br /><br />
+
+      <input type="checkbox" name="terms" checked /><br /><br />
+
+      <label for="favcolor">Choose your favorite color</label><br />
+      <input
+        type="color"
+        name="favcolor"
+        id="favcolor"
+        value="#FF0000"
+      /><br /><br />
+
+      <label for="date">Date of Birth</label><br />
+      <input type="date" name="date" id="date" value="2022-08-15" />
+      <br /><br />
+
+      <label for="dateTime">Choose current Date and Time</label><br />
+      <input
+        type="datetime"
+        name="dateTime"
+        id="dateTime"
+        value="2022-08-15 00:00"
+      />
+      <br /><br />
+
+      <label for="email">Enter your email address</label><br />
+      <input
+        type="email"
+        name="email"
+        value="example@example.com"
+      /><br /><br />
+
+      <label for="file">Upload File</label><br />
+      <input
+        type="file"
+        name="file"
+        id="file"
+        value="for security reasons
+                you cant set default value for input
+                file"
+      /><br />
+
+      <label for="age">Enter your age</label><br />
+      <input type="number" name="age" value="18" /><br /><br />
+
+      <label for="pass">Enter your password</label><br />
+      <input type="password" name="pass" id="pass" value="123" /> <br /><br />
+
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="male" checked />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" value="female" /><br /><br />
+
+      <label for="range"> Ratings 0-100</label><br />
+      <input type="range" name="range" id="range" value="50" /><br /><br />
+
+      <label for="reset"> Reset </label><br />
+      <input type="reset" value="reset" /><br /><br />
+
+      <label for="name"> Enter your name </label><br />
+      <input type="text" name="name" value="John Doe" /> <br /><br />
+
+      <label for="search"> Search something </label><br />
+      <input type="search" name="search" id="search" value="what?" />
+      <br /><br />
+
+      <input type="submit" value="submit" /> <br /><br />
+
+      <label for="number"> Enter your phone number </label><br />
+      <input
+        type="tel"
+        name="nuber"
+        id="number"
+        value="+91-0000000000"
+      /><br /><br />
+
+      <label for="time"> Enter Current time </label><br />
+      <input type="time" name="time" id="time" value="00:00" /><br /><br />
+
+      <label for="link"> Enter the Web Address </label><br />
+      <input
+        type="url"
+        name="link"
+        id="link"
+        value="https://example.com"
+      /><br /><br />
+
+      <label for="week"> Choose Current week </label><br />
+      <input type="week" name="week" id="week" value="2022-W02" />
+    </form>
+  </body>
+</html>
